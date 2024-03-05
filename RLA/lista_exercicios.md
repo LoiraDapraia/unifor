@@ -1,1 +1,20 @@
+# UNIFOR
+**Nome**: Juan Doth
+**Disciplina**: Raciocínio logico algorítmico
 
+##EXERCÍCIO 3
+###Fluxograma
+```mermaid
+flowchart TD
+A([INICIO]) --> B{{digite um número:}}
+B --> C[/Número/]
+C --> D{Número > 0}
+D --NÃO--> E[O número não é positivo!]
+D --SIM--> F[R= Número % 2]
+E --> Z([FIM])
+F --> G{R == 0}
+G --NÃO--> H{{O número é impar!}}
+G --SIM--> I{{ O Número é par}}
+H --> Z
+I --> Z
+``` 
