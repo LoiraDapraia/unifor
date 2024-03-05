@@ -25,14 +25,14 @@ I --> Z
 3 ESCREVA "Digite um número"
 4 LEIA numero
 5 SE numero > 0 ENTAO
-6 resto = numero % 2
-7 SE resto == 0 ENTAO
-8 ESCREVA "O número é par!"
-9 	SENAO
-10 			ESCREVA "O número é impar!"
-11 	SENAO
-12 		ESCREVA " O número é positivo
-13 	FIM_ALGORITIMO
+6   resto = numero % 2
+7   SE resto == 0 ENTAO
+8     ESCREVA "O número é par!"
+9   SENAO
+10    ESCREVA "O número é impar!"
+11 SENAO
+12   ESCREVA " O número é positivo
+13 FIM_ALGORITIMO
 ```
 
 
