@@ -18,7 +18,7 @@ Y --> Z([FIM])
 ```
 ###Pseudocódigo
 ```
-1 ALGORITMO ContaAprovacoes 
+1 ALGORITMO Informe_O_Salario 
 2 DECLARE salario
 3 ESCREVA informe o salario
 4 LEIA salario 
