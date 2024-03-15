@@ -1,6 +1,7 @@
-#UNIFOR
+# UNIFOR
 **Nome**: Juan Doth
-**Disciplina**: RLA
+**Disciplina**: Raciocínio logico algorítmico
+
 ##Questão 2
 ###Fluxograma
 ```mermaid
