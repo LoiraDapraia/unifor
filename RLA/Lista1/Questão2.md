@@ -18,7 +18,7 @@ Y --> Z([FIM])
 ```
 ###Pseudocódigo
 ```
-1 ALGORITMO Verificar aumento do salario 
+1 ALGORITMO ContaAprovacoes 
 2 DECLARE salario
 3 ESCREVA informe o salario
 4 LEIA salario 
