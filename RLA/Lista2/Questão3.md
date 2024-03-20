@@ -27,3 +27,4 @@ O -- sim -->P[não pode ser dividido]
 O -- não --> Q[N1/N2]
 Q --> R(Resultado)
 R --> Z
+```
