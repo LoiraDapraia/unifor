@@ -21,28 +21,24 @@ DECLARE a,b,axu: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o valor de a
     ESCREVA "Digite o valor da a:"
 
-    // Insira seu comentário
+    // Armazena o valor inserido pelo usuário na variável "a"
     LEIA a
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o valor de b
     ESCREVA "Digite o valor da b:"
 
-    // Insira seu comentário
+    // Armazena o valor inserido pelo usuário na variável "b"
     LEIA b
 
-    // Insira seu comentário
+    // Troca os valores de a e b usando uma variável auxiliar
     aux <- a 
-
-    // Insira seu comentário
     a <- b
-
-    // Insira seu comentário
     b <- aux
 
-    // Insira seu comentário
+    // Exibe os novos valores de a e b após a troca
     ESCREVA "a=", a
     ESCREVA "b=", b
 
