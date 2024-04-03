@@ -25,40 +25,40 @@ DECLARE nota, soma, media: REAL; cont: INTEIRO
 
 INICIO
 	
-	// Solicita que o usuário insira a nota do aluno (uma nota negativa finaliza)
+	// Entrada do usuário da primeira nota
 	ESCREVA "Digite a nota do aluno (nota negativa finaliza): "
 
-	// Armazena o valor inserido pelo usuário na variável "nota"
+	// Armazena o valor de entrada na variável "nota"
 	LEIA nota
 	
-	// Inicializa as variáveis "soma" e "cont"
+	// Inicialização das variáveis soma e cont
 	soma <- 0
 	cont <- 0
 	
-	// Loop condicional (while) que executa as instruções enquanto a nota inserida for maior ou igual a zero
+	// Loop condicional para execucar as instruções até que a nota seja negativa
 	ENQUANTO nota >= 0 FAÇA
 
-		// Adiciona a nota à variável "soma" a cada iteração
+		// Incrementa "nota" à variável "soma" a cada iteração
 		soma <- soma + nota
 
-		// Incrementa 1 na variável "cont" a cada iteração
+		// Incrementa em 1 na variável "cont" a cada iteração
 		cont <- cont + 1
 
-		// Solicita uma nova nota ao usuário, uma nota negativa encerra o loop
+		// Solicita uma nota de outro aluno, sendo valores negativos permitem a saída do loop condicional (loop while)
 		ESCREVA "Digite a nota do aluno (nota negativa finaliza): "
 
-		// Armazena o valor inserido pelo usuário na variável "nota"
+		// Reatribui um novo valor na variável "nota"
 		LEIA nota
 
 	FIM_ENQUANTO
 
-	// Verifica se pelo menos uma nota foi inserida (para evitar divisão por zero)
+	// Condição para exibir a contagem e média das notas se a variável cont for maior que zero.
 	SE cont > 0 ENTÃO
 
-		// Calcula a média das notas
+		// Calcula a média das notas dos alunos aprovados
 		media <- soma / cont
 
-		// Exibe a contagem e a média das notas
+		// Exibe a mensagem com o número de alunos aprovados e a média geral
 		ESCREVA "Foram lidas", cont, "nota(s). A média aritmética é", media
 
 	FIM_SE
