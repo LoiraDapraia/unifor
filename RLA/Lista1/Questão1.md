@@ -33,3 +33,12 @@ I --> Z
 11 SENAO
 12   ESCREVA " O número é positivo
 13 FIM_ALGORITIMO
+
+
+#### Tabela de testes (0,25 ponto)
+| numero | numero >= 0 | resto | resto == 0 | Saída |
+| -- | -- | -- | -- | -- | 
+| -1 | F |   |   | "O número deve ser postivo!" |
+| 0  | V | 0 | V | "O número é par!" |
+| 13 | V | 1 | F | "O número é impar!" |
+| 30 | V | 0 | V | "O número é par!" |
