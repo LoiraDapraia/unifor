@@ -18,15 +18,29 @@ Y --> Z([FIM])
 ```
 ###Pseudocódigo
 ```
-1 ALGORITMO Salario_Final 
-2 DECLARE salario
-3 ESCREVA informe o salario
-4 LEIA salario 
-5    SE salario for = R$ 500 ENTAO
-6     ESCREVA Aumento de 20%
-7   SENAO 
-8     ESCREVA aumento de 10% ENTAO
-7    ESCREVA calcular o novo salario ENTAO
-8   ESCREVA novo salario 
-9 FIM_ALGORITMO
+ALGORTIMO ReajusteSalario
+DECLARE sal_atual, sal_reaj: REAL
+
+INICIO
+
+    // para a pessoa escrever seu salario atual
+    ESCREVA "Digite seu salário atual:"
+
+    // o algoritimo vai ler o seu salario
+    LEIA sal_atual
+
+    // se for maior que 500 vai ter reajuste
+    SE sal_atual <= 500 ENTAO
+        sal_reaj = sal_atual * 1.2
+
+    // se não vara o reajuste com outro valor
+    SENAO
+        sal_reaj = sal_atual * 1.1
+
+    FIM_SE
+
+    // apresentar o novo salario
+    ESCREVA "O novo salário é R$", sal_reaj
+
+FIM
 ```
