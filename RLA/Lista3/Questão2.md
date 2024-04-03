@@ -23,19 +23,19 @@ DECLARE n: INTEIRO
 
 INICIO
 
-    // Solicita que o usuário digite a quantidade de números
-    ESCREVA "Digite a quantidade de números:"
+	// Variável n como dado de entrada
+	ESCREVA "Digite a quantidade de números:"
 
-    // Armazena o valor inserido pelo usuário na variável "n"
-    LEIA n
+	// Armazena o valor de entrada na variável "n"
+	LEIA n
 
-    // Loop contado (for) que itera sobre os valores de 'i' de 0 até n-1, incrementando 'i' em 3 a cada iteração
-    PARA i DE 0 ATÉ n-1 PASSO 3 FAÇA
+	//  Loop contado (loop for) executa as instruções a cada iteração dos valores de 'i' de 0 até n-1, incrementando 'i' em 3.
+	PARA i DE 0 ATÉ n-1 PASSO 3 FAÇA
 
-        // Exibe o valor de 'i' em cada iteração
-        ESCREVA i
+		// Exibe a mensagem relativa ao i em cada iteração
+		ESCREVA i
 
-    FIM_PARA
+	FIM_PARA
 
 FIM
 ```
