@@ -23,30 +23,32 @@ DECLARE idade, anos_apto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA ""Digite a sua idade:"
+    // Solicita que o usuário insira sua idade
+    ESCREVA "Digite a sua idade:"
 
-    // Insira seu comentário
+    // Lê a idade inserida pelo usuário
     LEIA idade
 
-    // Insira seu comentário
+    // Verifica se a idade é menor que zero
     SE idade < 0 ENTAO
+        // Informa que a idade deve ser maior que zero
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Insira seu comentário
+    // Se a idade não for menor que zero
     SENAO
 
-        // Insira seu comentário
+        // Verifica se a idade é maior ou igual a 18
         SE idade >= 18 ENTAO
+            // Informa que o candidato está apto a tirar a CNH
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Insira seu comentário
+        // Caso contrário
         SENAO
 
-            // Insira seu comentário
+            // Calcula quantos anos faltam para o candidato estar apto
             anos_apto <- 18 - idade
 
-            // Insira seu comentário
+            // Informa quantos anos faltam para o candidato estar apto
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
         FIM_SE
