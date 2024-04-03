@@ -15,41 +15,38 @@ D --SIM --> G[APTO]
 G --> Z([FIM])
 F --> Z
 ```
-#### Pseudocódigo 
+#### Pseudocódigo (1.0 ponto)
 
 ```java
 ALGORTIMO AptoCNH
 DECLARE idade, anos_apto: INTEIRO
 
-```plaintext
 INICIO
 
-    // Solicita que o usuário insira sua idade
-    ESCREVA "Digite a sua idade:"
+    // Insira seu comentário
+    ESCREVA ""Digite a sua idade:"
 
-    // Lê a idade inserida pelo usuário
+    // Insira seu comentário
     LEIA idade
 
-    // Verifica se a idade é menor que zero
+    // Insira seu comentário
     SE idade < 0 ENTAO
-        // Informa que a idade deve ser maior que zero
         ESCREVA "A idade deve ser maior que zero!"
 
-    // Se a idade não for menor que zero
+    // Insira seu comentário
     SENAO
 
-        // Verifica se a idade é maior ou igual a 18
+        // Insira seu comentário
         SE idade >= 18 ENTAO
-            // Informa que o candidato está apto a tirar a CNH
             ESCREVA "O candidato está apto a tirar a CNH!"
 
-        // Caso contrário
+        // Insira seu comentário
         SENAO
 
-            // Calcula quantos anos faltam para o candidato estar apto
+            // Insira seu comentário
             anos_apto <- 18 - idade
 
-            // Informa quantos anos faltam para o candidato estar apto
+            // Insira seu comentário
             ESCREVA "Faltam", anos_apto, "ano(s) para o candidato estar apto!"
 
         FIM_SE
@@ -58,9 +55,8 @@ INICIO
 
 FIM
 ```
-```
 
-#### Tabela de testes 
+#### Tabela de testes (1.0 ponto)
 
 | idade | idade < 0 | idade >= 18 | anos_apto | saída                                         | 
 | --    | --        | --          | --        | --                                            | 
