@@ -36,73 +36,79 @@ DECLARE op: INTEIRO; num1,num2,res: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Informa as operações válidas ao usuário
     ESCREVA "Operações válidas: 1(soma), 2(subtração), 3(multiplicação) e 4(divisão)"
 
-    // Insira seu comentário
+    // Solicita que o usuário digite uma operação
     ESCREVA "Digite uma operação:"
-
-    // Insira seu comentário
+    
+    // Lê a operação inserida pelo usuário
     LEIA op
 
-    // Insira seu comentário
+    // Solicita que o usuário digite um número
     ESCREVA "Digite um número:"
+    
+    // Lê o primeiro número inserido pelo usuário
     LEIA num1
 
-    // Insira seu comentário
+    // Solicita que o usuário digite outro número
     ESCREVA "Digite outro número:"
+    
+    // Lê o segundo número inserido pelo usuário
     LEIA num2
 
-    // Insira seu comentário
+    // Executa a escolha de acordo com a operação inserida
     ESCOLHA
 
-        // Insira seu comentário
+        // Caso a operação seja soma
         CASO op == 1
 
-            // Insira seu comentário
+            // Realiza a soma e armazena o resultado em 'res'
             res = num1 + num2
 
-            // Insira seu comentário
+            // Mostra a operação e o resultado
             ESCREVA num1, "+", num2, "=", res
 
-        // Insira seu comentário
+        // Caso a operação seja subtração
         CASO op == 2
 
-            // Insira seu comentário
+            // Realiza a subtração e armazena o resultado em 'res'
             res = num1 - num2
 
-            // Insira seu comentário
+            // Mostra a operação e o resultado
             ESCREVA num1, "-", num2, "=", res
 
-        // Insira seu comentário
+        // Caso a operação seja multiplicação
         CASO op == 3
 
-            // Insira seu comentário
+            // Realiza a multiplicação e armazena o resultado em 'res'
             res = num1 * num2
 
-            // Insira seu comentário
+            // Mostra a operação e o resultado
             ESCREVA num1, "*", num2, "=", res
 
-        // Insira seu comentário
+        // Caso a operação seja divisão
         CASO op == 4
 
-            // Insira seu comentário
+            // Verifica se o segundo número é diferente de zero
             SE num2 != 0 ENTAO
 
-                // Insira seu comentário
+                // Realiza a divisão e armazena o resultado em 'res'
                 res = num1 / num2
 
-                // Insira seu comentário
+                // Mostra a operação e o resultado
                 ESCREVA num1, "/", num2, "=", res
 
-            // Insira seu comentário
+            // Caso o segundo número seja zero
             SENAO
+                // Informa que é impossível dividir por zero
                 ESCREVA "Impossível dividir!"
 
             FIM_SE
 
-    // Insira seu comentário
+    // Caso a operação inserida seja inválida
     SENAO
+        // Informa que a operação é inválida
         ESCREVA "Operação inválida!"
 
     FIM_ESCOLHA
