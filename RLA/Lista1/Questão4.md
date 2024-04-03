@@ -58,8 +58,6 @@ INICIO
 
 FIM
 ```
-
-Comentários adicionados para explicar cada parte do pseudocódigo.
 ```
 
 #### Tabela de testes 
