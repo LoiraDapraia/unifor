@@ -30,49 +30,49 @@ DECLARE idade: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita que o usuário digite a idade do aluno
     ESCREVA "Digite a idade do aluno:"
 
-    // Insira seu comentário
+    // Lê a idade inserida pelo usuário
     LEIA idade
 
-    // Insira seu comentário
+    // Realiza a escolha com base na idade do aluno
     ESCOLHA
 
-        // Insira seu comentário
-        CASO idade >=5 E idade <= 7
+        // Caso a idade esteja entre 5 e 7 anos
+        CASO idade >= 5 E idade <= 7
 
-            // Insira seu comentário
-            ESCREVA "Infantial A"
+            // Informa que o aluno pertence à categoria Infantil A
+            ESCREVA "Infantil A"
 
-        // Insira seu comentário
-        CASO idade >=8 E idade <= 10
+        // Caso a idade esteja entre 8 e 10 anos
+        CASO idade >= 8 E idade <= 10
 
-            // Insira seu comentário
-            ESCREVA "Infantial B"
+            // Informa que o aluno pertence à categoria Infantil B
+            ESCREVA "Infantil B"
 
-        // Insira seu comentário
-        CASO idade >=11 E idade <= 13
+        // Caso a idade esteja entre 11 e 13 anos
+        CASO idade >= 11 E idade <= 13
 
-            // Insira seu comentário
+            // Informa que o aluno pertence à categoria Juvenil A
             ESCREVA "Juvenil A"
 
-        // Insira seu comentário
-        CASO idade >=14 E idade <= 17
+        // Caso a idade esteja entre 14 e 17 anos
+        CASO idade >= 14 E idade <= 17
 
-            // Insira seu comentário
+            // Informa que o aluno pertence à categoria Juvenil B
             ESCREVA "Juvenil B"
 
-        // Insira seu comentário
-        CASO idade >=18
+        // Caso a idade seja 18 anos ou mais
+        CASO idade >= 18
 
-            // Insira seu comentário
+            // Informa que o aluno pertence à categoria Adulto
             ESCREVA "Adulto"
 
-    // Insira seu comentário
+    // Caso a idade inserida seja inválida (menor que 5 anos)
     SENAO
 
-        // Insira seu comentário
+        // Informa que a idade inserida não é válida
         ESCREVA "Digite uma idade válida!"
 
     FIM_ESCOLHA
