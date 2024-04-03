@@ -46,36 +46,36 @@ DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita que o usuário insira a quantidade de notas dos alunos
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    // Armazena o valor inserido pelo usuário na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável "cont" para contar o número de alunos aprovados
     cont = 0 
 
-    // Insira seu comentário
+    // Loop contado (for) para iterar sobre cada aluno
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Solicita que o usuário insira a nota do aluno atual
         ESCREVA "Digite a nota do aluno", i, ":"
 
-        // Insira seu comentário
+        // Armazena a nota inserida pelo usuário na variável "nota"
         LEIA nota
 
-        // Insira seu comentário
+        // Verifica se a nota está dentro do intervalo de aprovação (entre 50 e 100)
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Incrementa o contador de alunos aprovados
             cont = cont + 1 
 
         FIM_SE
 
     FIM_PARA
 
-    // Insira seu comentário
-    ESCREVA "O numero de alunos aprovados e:", cont
+    // Exibe o número de alunos aprovados
+    ESCREVA "O número de alunos aprovados é:", cont
 
 FIM
 ```
