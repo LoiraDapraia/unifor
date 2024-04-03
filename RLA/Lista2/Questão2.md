@@ -21,16 +21,16 @@ DECLARE C, F: REAL
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite a temperatura em Celisus:"
+    // Solicita que o usuário insira a temperatura em Celsius
+    ESCREVA "Digite a temperatura em Celsius:"
 
-    // Insira seu comentário
+    // Lê a temperatura em Celsius inserida pelo usuário
     LEIA C
 
-    // Insira seu comentário
+    // Converte a temperatura de Celsius para Fahrenheit
     F <- (9/5) * C + 32
 
-    // Insira seu comentário
+    // Mostra a temperatura convertida em Fahrenheit
     ESCREVA "A temperatura em Fahrenheit é", F, "graus"
 
 FIM
