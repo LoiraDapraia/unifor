@@ -25,31 +25,33 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // a pessoa inserir um numero
+    // Solicita que o usuário insira um número
     ESCREVA "Digite um número: "
     
-    // a maquina vai ler o numero
+    // Lê o número inserido pelo usuário
     LEIA numero
     
-    // se o numero for mairo que 0 
+    // Verifica se o número é maior ou igual a zero
     SE numero >= 0 ENTAO
 
-        // Insira seu comentário
+        // Calcula o resto da divisão do número por 2
         resto <- numero % 2
 
-        // se o resto for igual a 0 a maquina escrevera o numero é par
+        // Verifica se o resto da divisão é igual a zero (ou seja, se o número é par)
         SE resto == 0 ENTAO
+            // Se o número é par, exibe essa informação
             ESCREVA "O número é par!"
 
-        // senao ira escrever que é impar
+        // Se o resto da divisão não é zero, o número é ímpar
         SENAO
-          ESCREVA "O número é impar!"
+            // Exibe essa informação
+            ESCREVA "O número é ímpar!"
 
         FIM_SE
 
-    // se o numero não for positivo ira voltar para o escreva o numero
+    // Se o número não for positivo (menor que zero), exibe uma mensagem de erro
     SENAO             
-        ESCREVA "O número deve ser postivo!"
+        ESCREVA "O número deve ser positivo!"
 
     FIM_SE
 
