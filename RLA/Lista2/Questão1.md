@@ -20,32 +20,34 @@ DECLARE num1, num2, num3, num4: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o número 1
     ESCREVA "Digite o número 1:"
 
-    // Insira seu comentário
+    // Lê o número 1 inserido pelo usuário
     LEIA num1
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o número 2
     ESCREVA "Digite o número 2:"
 
-    // Insira seu comentário
+    // Lê o número 2 inserido pelo usuário
     LEIA num2
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o número 3
     ESCREVA "Digite o número 3:"
 
-    // Insira seu comentário
+    // Lê o número 3 inserido pelo usuário
     LEIA num3
 
-    // Insira seu comentário
+    // Solicita que o usuário insira o número 4
     ESCREVA "Digite o número 4:"
 
-    // Insira seu comentário
+    // Lê o número 4 inserido pelo usuário
     LEIA num4
 
-    // Insira seu comentário
+    // Calcula a média dos quatro números
     media <- (num1 + num2 + num3 + num4)/4
+    
+    // Mostra a média calculada
     ESCREVA "A média é", media
 
 FIM
