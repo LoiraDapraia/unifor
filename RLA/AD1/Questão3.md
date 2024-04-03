@@ -27,44 +27,45 @@ DECLARE n,i,soma: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+    // Solicita que o usuário insira a quantidade de números (n >= 0)
+    ESCREVA "Digite a quantidade de números (n >= 0):"
     LEIA n
 
-    // Insira seu comentário
-    SE n >=0 ENTAO
+    // Verifica se o valor inserido pelo usuário é maior ou igual a zero
+    SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa a variável "soma" com zero
         soma <- 0
 
-        // Insira seu comentário
+        // Inicializa a variável "i" com algum valor inicial (possivelmente deveria ser 1)
         i <- i
 
-        // Insira seu comentário
+        // Loop condicional (while) que executa enquanto "i" for menor ou igual a "n"
         ENQUANTO i <= n FAÇA
 
-            // Insira seu comentário
+            // Solicita que o usuário insira um número
             ESCREVA "Digite um número:"
 
-            // Insira seu comentário
+            // Armazena o número inserido pelo usuário na variável "num"
             LEIA num 
 
-            // Insira seu comentário
+            // Adiciona o número à variável "soma"
             soma <- soma + num
 
-            // Insira seu comentário
+            // Incrementa o contador "i" para avançar para a próxima iteração
             i <- i + 1
 
         FIM_ENQUANTO
 
-    // Insira seu comentário
+    // Se o valor inserido pelo usuário não for maior ou igual a zero
     SENAO
-        "O valor deve ser maior ou igual a zero!"
+        // Informa que o valor deve ser maior ou igual a zero
+        ESCREVA "O valor deve ser maior ou igual a zero!"
 
     FIM_SE
 
-    // Insira seu comentário
-    ESCREVA "A soma dos numeros é , soma"
+    // Exibe a soma dos números inseridos pelo usuário
+    ESCREVA "A soma dos números é ", soma
 
 FIM
 ```
