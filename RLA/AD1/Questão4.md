@@ -23,34 +23,34 @@ DECLARE n,numerador,denominador: INTEIRO; termo, S: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita que o usuário digite o número de termos da série S
     ESCREVA "Digite o número de termos da série S:"
 
-    // Insira seu comentário
+    // Armazena o valor inserido pelo usuário na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável "S" com zero para armazenar a soma da série
     S <- 0
 
-    // Insira seu comentário
-    PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
+    // Loop contado (for) para iterar sobre os termos da série
+    PARA i DE 0 ATÉ n-1 PASSO 1 FAÇA
 
-        // Insira seu comentário
+        // Calcula o numerador do termo atual da série
         numerador = 2 * i + 1
 
-        // Insira seu comentário
+        // Calcula o denominador do termo atual da série
         denominador <- 2 * i + 2
 
-        // Insira seu comentário
+        // Calcula o termo atual da série dividindo o numerador pelo denominador
         termo = numerador / denominador
 
-        // Insira seu comentário
+        // Adiciona o termo atual à soma da série
         S += termo
 
     FIM_PARA
 
-    // Insira seu comentário
-    ESCREVA "Soma da série S é ", S
+    // Exibe a soma da série S
+    ESCREVA "A soma da série S é ", S
 
 FIM
 ```
