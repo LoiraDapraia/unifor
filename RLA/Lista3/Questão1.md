@@ -24,44 +24,44 @@ DECLARE num, resto: INTEIRO
 
 INICIO
 
-	// Entrada do usuário de um número inteiro qualquer armezando na variável "num"
-	ESCREVA "Digite um número: "
+    // Solicita que o usuário digite um número inteiro
+    ESCREVA "Digite um número: "
 
-	// Armazena o valor de entrada na variável "num"
-	LEIA num
+    // Armazena o número digitado pelo usuário na variável "num"
+    LEIA num
 
-	// Loop condicional (loop while) executa as instruções enquanto a condição "num < 0" for verdadeira
-	ENQUANTO num < 0 FAÇA
+    // Loop condicional (while) que continua enquanto "num" for menor que zero
+    ENQUANTO num < 0 FAÇA
 
-		// Exibe a mensagem com a solicitação de um número ao usuário
-		ESCREVA "Digite um número maior ou igual a zero:"
+        // Solicita que o usuário digite um número maior ou igual a zero
+        ESCREVA "Digite um número maior ou igual a zero:"
 
-		// Um novo número é atribuido na variável "num"
-		LEIA num
+        // Armazena um novo número digitado pelo usuário na variável "num"
+        LEIA num
 
-	FIM_ENQUANTO
+    FIM_ENQUANTO
 
-	// Executa as instruções sob a condição "num >= 0" for verdadeira
-	SE num >= 0 ENTAO
+    // Verifica se o número é maior ou igual a zero
+    SE num >= 0 ENTAO
 
-		// Calcula o resto da divisão de "num" por 2
-		resto ← num % 2
-               
-		// Executa a instrução se o resto é igual a zero
-		SE resto == 0 ENTAO
-			ESCREVA "O número é par!"
+        // Calcula o resto da divisão de "num" por 2
+        resto ← num % 2
 
-		// Executa a instrução se o resto não for igual a zero
-		SENAO
-			ESCREVA "O número é impar!"
+        // Verifica se o resto da divisão por 2 é igual a zero (se o número é par)
+        SE resto == 0 ENTAO
+            ESCREVA "O número é par!"
 
-		FIM_SE
+        // Se o resto da divisão por 2 não é zero, então o número é ímpar
+        SENAO
+            ESCREVA "O número é ímpar!"
 
-	// Executa a instrução se inteiro for negativo
-	SENAO                               
-		ESCREVA "O número deve ser postivo!"
+        FIM_SE
 
-	FIM_SE
+    // Se o número for negativo
+    SENAO
+        ESCREVA "O número deve ser positivo!"
+
+    FIM_SE
 
 FIM
 ```
