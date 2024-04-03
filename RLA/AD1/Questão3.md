@@ -38,7 +38,7 @@ INICIO
         soma <- 0
 
         // Inicializa a variável "i" com algum valor inicial (possivelmente deveria ser 1)
-        i <- i
+        i<- i
 
         // Loop condicional (while) que executa enquanto "i" for menor ou igual a "n"
         ENQUANTO i <= n FAÇA
