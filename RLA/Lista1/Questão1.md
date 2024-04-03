@@ -35,7 +35,7 @@ I --> Z
 13 FIM_ALGORITIMO
 
 
-#### Tabela de testes (0,25 ponto)
+#### Tabela de testes
 | numero | numero >= 0 | resto | resto == 0 | Saída |
 | -- | -- | -- | -- | -- | 
 | -1 | F |   |   | "O número deve ser postivo!" |
