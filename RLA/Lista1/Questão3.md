@@ -2,7 +2,7 @@
 **Nome**: Juan Doth
 **Disciplina**: Raciocínio logico algorítmico
 
-##Questão 2
+##Questão 3
 ###Fluxograma
 ```mermaid
 flowchart TD
