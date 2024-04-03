@@ -23,32 +23,34 @@ DECLARE n: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite um numero inteiro nao-negativo:"
+    // Solicita que o usuário digite um número inteiro não negativo
+    ESCREVA "Digite um número inteiro não negativo:"
 
-    // Insira seu comentário
+    // Armazena o valor inserido pelo usuário na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Verifica se o valor inserido pelo usuário é maior ou igual a zero
     SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa a variável "fator" como 1 para calcular o fatorial
         fator <- 1
 
-        // Insira seu comentário
+        // Loop contado (for) para calcular o fatorial de "n"
         PARA i DE 1 ATÉ n PASSO 1 FAÇA
 
-            // Insira seu comentário
-            fator <- fator * i        // fator *= i
+            // Calcula o fatorial multiplicando o fator pelo valor atual de "i"
+            fator <- fator * i
 
         FIM_PARA
 
-        // Insira seu comentário
-        ESCREVA "O fatorial de, n, é:", fator
+        // Exibe o fatorial de "n"
+        ESCREVA "O fatorial de ", n, " é:", fator
 
-    // Insira seu comentário
+    // Se o valor inserido pelo usuário não for maior ou igual a zero
     SENAO
+        // Informa que o valor deve ser maior ou igual a zero
         ESCREVA "O valor deve ser maior ou igual a zero!"
+
     FIM_SE
 
 FIM
