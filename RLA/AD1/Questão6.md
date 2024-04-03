@@ -23,34 +23,33 @@ DECLARE n, a, b, termo_atual: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário o número de termos desejado para a série Fibonacci
     ESCREVA "Número de termos da série Fibonacci:"
 
-    // Insira seu comentário
+    // Lê o número de termos fornecido pelo usuário e armazena na variável "n"
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa o primeiro termo da série Fibonacci com 0
     a <- 0
 
-    // Insira seu comentário
+    // Inicializa o segundo termo da série Fibonacci com 1
     b <- 1
 
-    // Insira seu comentário
+    // Loop para calcular e exibir os termos da série Fibonacci
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Exibe o termo atual da série Fibonacci
         ESCREVA a
 
-        // Insira seu comentário
+        // Calcula o próximo termo da série Fibonacci
         termo_atual <- a + b
 
-        // Insira seu comentário
+        // Atualiza os valores dos termos anteriores para os próximos termos
         a <- b
-
-        // Insira seu comentário
         b <- termo_atual
 
     FIM_PARA
+
 FIM
 
 ```
