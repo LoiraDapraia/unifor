@@ -19,7 +19,7 @@ J --> K[i =+ 1]
 K --LOOP--> G
 ```
 
-#### Pseudocódigo (1 ponto)
+#### Pseudocódigo
 
 ```java
 Algoritmo SomaNumeros
