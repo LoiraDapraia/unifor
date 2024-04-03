@@ -25,35 +25,35 @@ DECLARE num, num_inv, digito: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que digite o número a ser invertido
     ESCREVA "Digite o número a ser invertido:"
     LEIA num
 
-    // Insira seu comentário
+    // Verifica se o número é negativo
     SE num < 0 ENTAO
 
-        // Insira seu comentário
+        // Informa ao usuário que o número deve ser positivo
         ESCREVA "O número deve ser positivo!"
 
-    // Insira seu comentário
+    // Se o número é positivo
     SENAO
 
-        // Insira seu comentário
+        // Inicializa a variável para armazenar o número invertido
         num_inv <- 0
 
-        // Insira seu comentário
+        // Loop para inverter o número
         ENQUANTO num > 0 FAÇA
 
-            // Insira seu comentário
+            // Obtém o último dígito do número
             digito <- num % 10
 
-            // Insira seu comentário
+            // Adiciona o dígito obtido ao número invertido
             num_inv <- (num_inv * 10) + digito
 
-            // Insira seu comentário
+            // Remove o último dígito do número original
             num <- num // 10
 
-        // Insira seu comentário
+        // Exibe o número invertido
         ESCREVA "Número invertido:", num_inv
 
     FIM_SE
