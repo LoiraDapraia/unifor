@@ -25,29 +25,29 @@ DECLARE numero, resto: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // a pessoa inserir um numero
     ESCREVA "Digite um número: "
     
-    // Insira seu comentário
+    // a maquina vai ler o numero
     LEIA numero
     
-    // Insira seu comentário
+    // se o numero for mairo que 0 
     SE numero >= 0 ENTAO
 
         // Insira seu comentário
         resto <- numero % 2
 
-        // Insira seu comentário
+        // se o resto for igual a 0 a maquina escrevera o numero é par
         SE resto == 0 ENTAO
             ESCREVA "O número é par!"
 
-        // Insira seu comentário
+        // senao ira escrever que é impar
         SENAO
           ESCREVA "O número é impar!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // se o numero não for positivo ira voltar para o escreva o numero
     SENAO             
         ESCREVA "O número deve ser postivo!"
 
