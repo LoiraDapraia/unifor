@@ -44,37 +44,37 @@ DECLARE n,i: INTEIRO; soma,num: REAL
 
 INICIO
 
-    // Solicita que o usuário digite a quantidade de números
-    ESCREVA "Digite a quantidade de números:"
+	// Dado de entrada armezenado na variável n
+	ESCREVA "Digite a quantidade de números:"
 
-    // Armazena o valor inserido pelo usuário na variável "n"
-    LEIA n
+	// Armazena o valor de entrada na variável "n"
+	LEIA n
 
-    // Inicializa a variável "soma" em 0 para armazenar a soma dos números
-    soma <- 0
+	// Inicializa a variável "soma" em 0
+	soma <- 0
 
-    // Inicializa a variável "i" em 1 para usar como contador
-    i <- 1
+	// Inicializa a variável "i" em 1
+	i <- 1
 
-    // Loop condicional (while) que executa as instruções enquanto "i" for menor ou igual a "n"
-    ENQUANTO i <= n FAÇA
+	// Loop condicional (loop while) executa as instruções enquanto a condição "i <= n" for verdadeira
+	ENQUANTO i <= n FAÇA
 
-        // Exibe a mensagem solicitando um número ao usuário, indicando a iteração atual
-        ESCREVA "Digite o número", i, ":"
+		// Exibe a mensagem solictando o número em cada iteração
+		ESCREVA "Digite o número", i,":"
 
-        // Armazena o número inserido pelo usuário na variável "num"
-        LEIA num
+		// Armazena o valor de entrada na variável "num"
+		LEIA num
 
-        // Incrementa o valor de "num" na variável "soma" para calcular a soma dos números
-        soma <- soma + num
+		// Incrementa "num" na variável "soma" em cada iteração
+		soma <- soma + num
 
-        // Incrementa o contador "i" para avançar para a próxima iteração
-        i <- i + 1
+		// Incrementa 1 na variável "num" em cada iteração
+		i <- i + 1
 
-    FIM_ENQUANTO
+	FIM_ENQUANTO
 
-    // Exibe a mensagem informando a soma dos números
-    ESCREVA "A soma dos números é", soma
+	// Exibe a mensagem concatenando aos caracteres "A soma dos número é" com a variável "soma".
+	ESCREVA "A soma dos número é", soma
 
 FIM
 ```
