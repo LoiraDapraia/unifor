@@ -22,41 +22,44 @@ F --> Z
 ALGORTIMO SituacaoAluno
 DECLARE nota1, nota2, media: REAL
 
-INICIO
-
-    // Insira seu comentário
+ // Solicita que o usuário insira a nota 1
     ESCREVA "Digite a nota 1:"
 
-    // Insira seu comentário
+    // Lê a nota 1 inserida pelo usuário
     LEIA nota1
 
-    // Insira seu comentário
+    // Solicita que o usuário insira a nota 2
     ESCREVA "Digite a nota 2:"
 
-    // Insira seu comentário
+    // Lê a nota 2 inserida pelo usuário
     LEIA nota2
 
-    // Insira seu comentário
+    // Verifica se ambas as notas são maiores ou iguais a zero
     SE nota1 >= 0 E nota2 >= 0 ENTAO
 
-        // Insira seu comentário
-        media =  (nota1 + nota2)/2
+        // Calcula a média das notas
+        media = (nota1 + nota2) / 2
 
-        // Insira seu comentário
+        // Verifica se a média é maior ou igual a 7
         SE media >= 7 ENTAO
+            // Informa que o aluno está aprovado
             ESCREVA "O aluno está aprovado!"
 
-        // Insira seu comentário
+        // Caso contrário
         SENAO
-            "O aluno está reprovado!"
+            // Informa que o aluno está reprovado
+            ESCREVA "O aluno está reprovado!"
 
         FIM_SE
 
-    // Insira seu comentário
+    // Se alguma das notas não for maior ou igual a zero
     SENAO
+        // Informa que a nota deve ser maior que zero
         ESCREVA "A nota deve ser maior que zero!"
 
     FIM_SE
+
+FIM
 
 FIM
 ```
