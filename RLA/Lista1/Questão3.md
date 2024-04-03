@@ -16,7 +16,7 @@ D --Sim --> F[APROVADO]
 E --> Z([FIM])
 F --> Z
 ```
-#### Pseudocódigo (1 ponto)
+#### Pseudocódigo
 
 ```java
 ALGORTIMO SituacaoAluno
@@ -64,7 +64,7 @@ FIM
 FIM
 ```
 
-#### Tabela de testes (1 ponto)
+#### Tabela de testes
 
 | nota1 | nota2 | nota1 >= 0 E nota2 >= 0 | media        | saĩda | 
 | --    | --    | --                      | --           | --    | 
