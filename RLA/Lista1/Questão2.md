@@ -16,31 +16,40 @@ G --> Y[Novo Salario]
 F --> G
 Y --> Z([FIM])
 ```
-###Pseudocódigo
-```
+#### Pseudocódigo (1.0 ponto)
+
+```java
 ALGORTIMO ReajusteSalario
 DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // para a pessoa escrever seu salario atual
+    // Insira seu comentário
     ESCREVA "Digite seu salário atual:"
 
-    // o algoritimo vai ler o seu salario
+    // Insira seu comentário
     LEIA sal_atual
 
-    // se for maior que 500 vai ter reajuste
+    // Insira seu comentário
     SE sal_atual <= 500 ENTAO
         sal_reaj = sal_atual * 1.2
 
-    // se não vara o reajuste com outro valor
+    // Insira seu comentário
     SENAO
         sal_reaj = sal_atual * 1.1
 
     FIM_SE
 
-    // apresentar o novo salario
+    // Insira seu comentário
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
 ```
+
+#### Tabela de testes (1.0 ponto)
+
+| sal_atual | sal_atual >= 500 |sal_reaj       | saída                   | 
+| --        | --               | --            | --                      | 
+| 400       | False            | 400*1.2 = 480 | O novo salário é R$ 480 |
+| 500       | True             | 500*1.2 = 600 | O novo salário é R$ 600 |
+| 600       | True             | 600*1.1 = 660 | O novo salário é R$ 660 |
