@@ -24,23 +24,25 @@ DECLARE sal_atual, sal_reaj: REAL
 
 INICIO
 
-    // a pessoa deve digitar o seu salario atual
+    // Solicita que a pessoa digite seu salário atual
     ESCREVA "Digite seu salário atual:"
 
-    // O algoritmo vai ler o seu salario
+    // O algoritmo vai ler o salário
     LEIA sal_atual
 
-    // Se o salario for menor ou igual a 500 a pessoa recebera um ajuste de 1.2
+    // Verifica se o salário é menor ou igual a 500
     SE sal_atual <= 500 ENTAO
+        // Se o salário for menor ou igual a 500, aplica um ajuste de 20%
         sal_reaj = sal_atual * 1.2
 
-    // SENAO for maior ou igual a 500 receberar um ajuste de 1.1
+    // Se o salário for maior que 500
     SENAO
+        // Aplica um ajuste de 10%
         sal_reaj = sal_atual * 1.1
 
     FIM_SE
 
-    // O algoritimo vai mostrar o novo salario
+    // O algoritmo vai mostrar o novo salário
     ESCREVA "O novo salário é R$", sal_reaj
 
 FIM
